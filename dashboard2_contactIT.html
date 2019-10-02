@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="ashumeow">
+        <link rel="icon" href="#">
+        <title>Responsive Admin Dashboard</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/dashboard2.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 navbar-expand-md">
+            <!-- logo -->
+            <img width=125 height=60 src="https://cdn.iconscout.com/icon/free/png-256/company-39-282696.png">
+            <span padding-left=10em>...</span>
+            <div class="navbar-collapse collapse" id="topnav">
+                <input 
+                    class="form-control form-control-dark w-100" 
+                    type="text" 
+                    placeholder="Search" 
+                    aria-label="Search">
+                    <span padding-left=10em>.</span>
+                    <button class="btn btn-sm btn-outline-secondary">
+                    Search
+                    </button>
+                <ul class="navbar-nav px-3 py-2">
+                    <li class="nav-item text-nowrap">
+                        <a class="nav-link" href="#"> Sign out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row navbar-expand-md">
+                <nav class="col-md-3 col-lg-2 bg-light navbar-collapse collapse sidebar" id="sidenav">
+                    <div class="sidebar-sticky flex-column w-100 mt-1">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard2_main.html">
+                                    <span data-feather="home"></span> Dashboard <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard2_orders.html">
+                                    <span data-feather="file"></span> Orders
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard2_salesSupport.html">
+                                    <span data-feather="users"></span> Sales Support
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span data-feather="users"></span> Customers Feedback
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span data-feather="bar-chart-2"></span> Reports
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="dashboard2_contactIT.html">
+                                    <span data-feather="layers"></span> Help / Issues
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Main Reports</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                        <span data-feather="plus-circle"></span>
+                    </a>
+                    </h6>
+                        <ul class="nav flex-column mb-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span data-feather="file-text"></span> Current month
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span data-feather="file-text"></span> Last quarter
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span data-feather="file-text"></span> Social engagement
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span data-feather="file-text"></span> Year-end sale
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        
+                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                    
+                    <h2>Submit New Ticket</h2>
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" class="bmd-label-floating">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1">
+                        <span class="bmd-help">We'll never share your email with anyone else.</span>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1" class="bmd-label-floating">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleSelect1" class="bmd-label-floating">Example select</label>
+                        <select class="form-control" id="exampleSelect1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleSelect2" class="bmd-label-floating">Example multiple select</label>
+                        <select multiple class="form-control" id="exampleSelect2">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleTextarea" class="bmd-label-floating">Example textarea</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputFile" class="bmd-label-floating">File input</label>
+                        <input type="file" class="form-control-file" id="exampleInputFile">
+                        <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                          Option one is this and that&mdash;be sure to include why it's great
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                          Option two can be something else and selecting it will deselect option one
+                        </label>
+                      </div>
+                      <div class="radio disabled">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                          Option three is disabled
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Check me out
+                        </label>
+                      </div>
+                      <button class="btn btn-default">Cancel</button>
+                      <button type="submit" class="btn btn-primary btn-raised">Submit</button>
+                    </form>
+
+                    <h2>Active Tickets (from IT Support)</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-sm">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                    <th>Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1,001</td>
+                                    <td>Lorem</td>
+                                    <td>ipsum</td>
+                                    <td>dolor</td>
+                                    <td>sit</td>
+                                </tr>
+                                <tr>
+                                    <td>1,002</td>
+                                    <td>amet</td>
+                                    <td>consectetur</td>
+                                    <td>adipiscing</td>
+                                    <td>elit</td>
+                                </tr>
+                                <tr>
+                                    <td>1,003</td>
+                                    <td>Integer</td>
+                                    <td>nec</td>
+                                    <td>odio</td>
+                                    <td>Praesent</td>
+                                </tr>
+                                <tr>
+                                    <td>1,003</td>
+                                    <td>libero</td>
+                                    <td>Sed</td>
+                                    <td>cursus</td>
+                                    <td>ante</td>
+                                </tr>
+                                <tr>
+                                    <td>1,004</td>
+                                    <td>dapibus</td>
+                                    <td>diam</td>
+                                    <td>Sed</td>
+                                    <td>nisi</td>
+                                </tr>
+                                <tr>
+                                    <td>1,005</td>
+                                    <td>Nulla</td>
+                                    <td>quis</td>
+                                    <td>sem</td>
+                                    <td>at</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <!-- Icons -->
+        <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+        <script>
+        feather.replace()
+        </script>
+
+        <!-- Graphs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+        <script>
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+            labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            datasets: [{
+                data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+                lineTension: 0,
+                backgroundColor: 'transparent',
+                borderColor: '#007bff',
+                borderWidth: 4,
+                pointBackgroundColor: '#007bff'
+            }]
+            },
+            options: {
+            scales: {
+                yAxes: [{
+                ticks: {
+                    beginAtZero: false
+                }
+                }]
+            },
+            legend: {
+                display: false,
+            }
+            }
+        });
+        </script>
+    </body>
+</html>
