@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="ashumeow">
+        <link rel="icon" href="#">
+        <title>Responsive Admin Dashboard</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/dashboard2.css">
+        <style>
+        .container {
+          border: 2px solid #ccc;
+          background-color: #eee;
+          border-radius: 5px;
+          padding: 16px;
+          margin: 16px 0
+        }
+
+        .container::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        .container img {
+          float: left;
+          margin-right: 20px;
+          border-radius: 50%;
+        }
+
+        .container span {
+          font-size: 20px;
+          margin-right: 15px;
+        }
+
+        @media (max-width: 500px) {
+          .container {
+              text-align: center;
+          }
+          .container img {
+              margin: auto;
+              float: none;
+              display: block;
+          }
+        }
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 navbar-expand-md">
+            <!-- logo -->
+            <img width=125 height=60 src="https://cdn.iconscout.com/icon/free/png-256/company-39-282696.png">
+            <span padding-left=10em>...</span>
+            <div class="navbar-collapse collapse" id="topnav">
+                <input 
+                    class="form-control form-control-dark w-100" 
+                    type="text" 
+                    placeholder="Search" 
+                    aria-label="Search">
+                    <span padding-left=10em>.</span>
+                    <button class="btn btn-sm btn-outline-secondary">
+                    Search
+                    </button>
+                <ul class="navbar-nav px-3 py-2">
+                    <li class="nav-item text-nowrap">
+                        <a class="nav-link" href="#"> Sign out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row navbar-expand-md">
+                <nav class="col-md-3 col-lg-2 bg-light navbar-collapse collapse sidebar" id="sidenav">
+                    <div class="sidebar-sticky flex-column w-100 mt-1">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard2_main.html">
+                                    <span data-feather="home"></span> Dashboard <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard2_orders.html">
+                                    <span data-feather="file"></span> Orders
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard2_salesSupport.html">
+                                    <span data-feather="users"></span> Sales Support
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="dashboard2_customerfeed.html">
+                                    <span data-feather="users"></span> Customers Feedback
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard2_reports.html">
+                                    <span data-feather="bar-chart-2"></span> Reports
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard2_contactIT.html">
+                                    <span data-feather="layers"></span> Help / Issues
+                                </a>
+                            </li>
+                        </ul>
+        
+                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                    <span>Main Reports</span>
+                    <a class="d-flex align-items-center text-muted" href="#">
+                        <span data-feather="plus-circle"></span>
+                    </a>
+                    </h6>
+                        <ul class="nav flex-column mb-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span data-feather="file-text"></span> Current month
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span data-feather="file-text"></span> Last quarter
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span data-feather="file-text"></span> Social engagement
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span data-feather="file-text"></span> Year-end sale
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+        
+                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                  <div class="container">
+                    <h1 class="display-4">Customers Feedback</h1>
+                  </div>
+                    <div class="container">
+                      <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:90px">
+                      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+                      <p>Delivered on-time.</p>
+                    </div>
+                    <div class="container">
+                      <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" style="width:90px">
+                      <p><span >Rebecca Flex.</span> CEO at Company.</p>
+                      <p>Great service.</p>
+                    </div>
+                    <div class="container">
+                      <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:90px">
+                      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+                      <p>We were not happy since due to 1 day delay.</p>
+                    </div>
+                    <div class="container">
+                      <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" style="width:90px">
+                      <p><span >Rebecca Flex.</span> CEO at Company.</p>
+                      <p>Thank you. We got orders on-time.</p>
+                    </div>
+                    <div class="container">
+                      <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" style="width:90px">
+                      <p><span>Chris Fox.</span> CEO at Mighty Schools.</p>
+                      <p>Good delivery.</p>
+                    </div>
+                    <div class="container">
+                      <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" style="width:90px">
+                      <p><span >Rebecca Flex.</span> CEO at Company.</p>
+                      <p>More than we expected.</p>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <!-- Icons -->
+        <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+        <script>
+        feather.replace()
+        </script>
+    </body>
+</html>
